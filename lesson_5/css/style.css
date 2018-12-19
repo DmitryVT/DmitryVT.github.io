@@ -1,0 +1,34 @@
+h1  {
+ text-align: center;
+ color :red;
+}
+h2  {
+ text-align: center;
+ color :blue;
+}
+h3  {
+ text-align: center;
+ color :blue;
+}
+.menu{
+ display: inline-block;
+}
+.underline {
+ text-decoration :underline;
+ border: 2px solid #000;
+}
+.linetrough {
+ text-decoration :line-through;
+ border: 2px solid #000;
+}
+.cursive{
+ 	font-style:oblique ;
+ 	border: 2px solid #000;
+}
+.fat{
+ font-weight :bold;
+ border: 2px solid #000;
+}
+.nothing{
+ border: 2px solid #000;
+}
