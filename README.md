@@ -9,6 +9,6 @@
 
 [урок 7](DmitryVT.github.io/lesson_7/src/ "Первый сайт на HTML + CSS") - Первый сайт на HTML + CSS
 
-[урок 8](DmitryVT.github.io/lesson8/ "сетка Bootstrap") - сетка Bootstrap
+[урок 8](DmitryVT.github.io/lesson_8/ "сетка Bootstrap") - сетка Bootstrap
 
-[урок 9](DmitryVT.github.io/lesson8/ "Первый сайт с Bootstrap") - Первый сайт с Bootstrap
+[урок 9](DmitryVT.github.io/lesson_9/ "Первый сайт с Bootstrap") - Первый сайт с Bootstrap
