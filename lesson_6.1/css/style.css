@@ -1,0 +1,48 @@
+.box {
+	width: 100%;
+	background-color: #000;
+	text-decoration-color:#fff;
+	position:fixed;
+	height:100px;
+ top: 0;
+ left: 0;
+}
+
+.box1{
+ position: relative;
+ float: right;
+ margin:40px 20px 40px 20px;
+}
+
+.box2{
+ position: relative;
+ float: right;
+ margin:40px 20px 40px 20px;
+}
+
+.box3{
+ position: relative;
+ float: right;
+ margin:40px 20px 40px 20px;
+}
+
+.box4{
+ position: relative;
+ float: right;
+ margin:40px 20px 40px 20px;
+}
+
+.box5{
+ position: relative;
+ float: right;
+ margin:40px 20px 40px 20px;
+}
+
+p {
+	margin-top: 100px;
+}
+
+a {
+	color: white;
+ text-decoration: none;
+}
