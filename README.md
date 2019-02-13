@@ -18,3 +18,5 @@
 [Практика 1](DmitryVT.github.io/practic_1/src/ "Header") - Вёрстка адаптивной шапки
 
 [урок 14](DmitryVT.github.io/lesson_14/ "Подключение шрифтов") - Подключение шрифтов
+
+[Практика 2](DmitryVT.github.io/practic_2/src/ "Main") - Вёрстка первого экрана и подключение шрифтов
