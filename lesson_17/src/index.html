@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>Всплывающие окна</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <button class="popup-with-zoom-anim btn main-btn" href="#small-dialog">Удалить файл</button><br>
+
+    <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+    <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+      <h1>Вы действительно  хотите удалить файл?</h1>
+      <button class="btn">Да</button>
+      <button class="btn">Нет</button>
+    </div>
+
+
+
+
+
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <!-- Magnific Popup core JS file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('.popup-with-zoom-anim').magnificPopup({
+          type: 'inline',
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: 'auto',
+
+          closeBtnInside: true,
+          preloader: false,
+          
+          midClick: true,
+          removalDelay: 300,
+          mainClass: 'my-mfp-zoom-in'
+        });
+      });
+    </script>
+
+  </body>
+</html>
