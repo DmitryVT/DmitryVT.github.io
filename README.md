@@ -28,3 +28,5 @@
 [урок 16](DmitryVT.github.io/lesson_16/ "Слайдер") - Вёрстка слайдера fotorama
 
 [Практика 4](DmitryVT.github.io/practic_4/src/ "Верстка слайдера") - Верстка слайдера
+
+[урок 17](DmitryVT.github.io/lesson_17/ "Всплывающие окна") - Всплывающие окна
