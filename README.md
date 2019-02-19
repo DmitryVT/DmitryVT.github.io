@@ -30,3 +30,5 @@
 [Практика 4](https://DmitryVT.github.io/practic_4/src/ "Верстка слайдера") - Верстка слайдера
 
 [урок 17](https://dmitryvt.github.io/lesson_17/src/ "Всплывающие окна") - Всплывающие окна
+
+[Практика 5](https://DmitryVT.github.io/practic_5/src/ "Всплывающее окно") - Всплывающее окно
