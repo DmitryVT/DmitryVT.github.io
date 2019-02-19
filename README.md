@@ -29,4 +29,4 @@
 
 [Практика 4](DmitryVT.github.io/practic_4/src/ "Верстка слайдера") - Верстка слайдера
 
-[урок 17](DmitryVT.github.io/lesson_17/src/ "Всплывающие окна") - Всплывающие окна
+[урок 17](https://dmitryvt.github.io/lesson_17/src/ "Всплывающие окна") - Всплывающие окна
