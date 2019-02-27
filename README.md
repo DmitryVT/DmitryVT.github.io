@@ -32,3 +32,7 @@
 [урок 17](https://dmitryvt.github.io/lesson_17/src/ "Всплывающие окна") - Всплывающие окна
 
 [Практика 5](https://DmitryVT.github.io/practic_5/src/ "Всплывающее окно") - Всплывающее окно
+
+[урок 18.1](https://dmitryvt.github.io/lesson_18_1/src/ "Табы") - Форма регистрации 
+
+[урок 18.2](https://dmitryvt.github.io/lesson_18_2/src/ "Аккордеон") - Аккордеон
