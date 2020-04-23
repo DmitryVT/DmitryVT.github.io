@@ -1,0 +1,187 @@
+/* Базовый контейнер табов */
+.tabs {
+  width: 629px;
+  height: 444px;
+  padding: 0px;
+  margin: 11px auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+  display: none;
+  padding: 15px;
+  background: #000000;
+  border: 1px solid #ddd;
+}
+
+.tabs>section>p {
+  margin: 0 0 5px;
+  line-height: 1.5;
+  color: #383838;
+
+  /* прикрутим анимацию */
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+.form-input {
+  display: block;
+  margin: 6rem 3rem -3rem 3rem;
+  padding: 2.5rem 2rem 1.5rem 2rem;
+  width: 482px;
+  height: 61px;
+  background-color: #181717;
+  border: none;
+}
+::-webkit-input-placeholder { 
+  font-family: 'PT Sans', sans-serif;
+  color:  #ffffff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 0.917;
+  text-align: justify;
+  }
+ .pass {
+  display: block;
+  margin: 5rem 5rem;
+  font-family: 'PT Sans', sans-serif;
+  color:  #c51f03;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.467;
+  text-align: justify;
+ }
+ .remember {
+  position: absolute;
+  font-family: 'PT Sans', sans-serif;
+  color:  #6f6d6d;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.467;
+  text-align: justify;
+  margin-left: 3rem;
+ }
+ .check {
+  display: block;
+  margin-left: 5rem;
+ }
+ .check1 {
+  position: absolute;
+ }
+
+ .button{
+  display: block;
+  margin-left: 85%;
+  text-align: center;
+  padding-left: 3rem;
+  font-family: 'PT Sans', sans-serif;
+  color:  #ffffff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 0.917;
+  text-align: justify;
+  background: -webkit-radial-gradient(circle farthest-side at 50%, #cf2303 0%, #7f0501 100%);
+  background: -moz-radial-gradient(circle farthest-side at 50%, #cf2303 0%, #7f0501 100%);
+  background: -o-radial-gradient(circle farthest-side at 50%, #cf2303 0%, #7f0501 100%);
+  background: -ms-radial-gradient(circle farthest-side at 50%, #cf2303 0%, #7f0501 100%);
+  background: radial-gradient(circle farthest-side at 50%, #cf2303 0%, #7f0501 100%);
+  width: 128px;
+  height: 41px;
+  border: none;
+ }
+/* Описываем анимацию свойства opacity */
+ 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Прячем чекбоксы */
+.tabs>input {
+  display: none;
+  position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+  display: inline-block;
+  margin: 0 -10px 0px 20px;
+  padding: 15px 25px;
+  text-align: center;
+  color: #aaa;
+  border: 0px solid #ddd;
+  border-width: 1px 1px 1px 1px;
+  background: #FCFCFC;
+  border-radius: 5px 5px 0 0;
+  font-family: 'PT Sans', sans-serif;
+  color:  #080707;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 0.917;
+  text-align: justify;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+
+/* Изменения стиля переключателей вкладок при наведении */
+ 
+.tabs>label:hover {
+  color: #888;
+  cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+  border-top: 1px solid #009933;
+  border-bottom: 1px solid #00a2d5;
+  background: #00a2d5;
+  font-family: 'PT Sans', sans-serif;
+  color:  #ffffff;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 0.917;
+  text-align: justify;
+  text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.75);
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+  display: block;
+}
+/* Убираем текст с переключателей 
+* и оставляем иконки на малых экранах
+*/
+ 
+
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+  border: solid 2rem #00a2d5;
+  border-radius: 5px;
+}
+
+
+@media screen and (max-width: 680px) {
+  .tabs>label {
+    font-size: 0;
+  }
+  .tabs>label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+/* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+  .tabs>label {
+    padding: 15px;
+  }
+}
