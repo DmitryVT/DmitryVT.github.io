@@ -5,8 +5,8 @@
 
 [урок 5](https://DmitryVT.github.io/lesson_5/ "Первая HTML книга + CSS") - Первая HTML книга + CSS
 
-[урок 6.1](https://DmitryVT.github.io/lesson_6.1/ "CSS") - Позиционирование в CSS 
-[урок 6.2](https://DmitryVT.github.io/lesson_6.2/ "CSS") 
+[урок 6.1](https://DmitryVT.github.io/lesson_6.1/ "CSS")  и 
+[урок 6.2](https://DmitryVT.github.io/lesson_6.2/ "CSS") - Позиционирование в CSS 
 
 [урок 7](https://DmitryVT.github.io/lesson_7/src/ "Первый сайт на HTML + CSS") - Первый сайт на HTML + CSS
 
