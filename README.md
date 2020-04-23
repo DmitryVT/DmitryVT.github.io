@@ -40,3 +40,5 @@
 [Практика 6](https://DmitryVT.github.io/practic_6/src/ "Верстка блока с ценами") - Верстка блока с ценами
 
 [урок 19](https://dmitryvt.github.io/lesson_19/src "Анимация на CSS3") - Анимация на CSS3
+
+[Практика 7](https://DmitryVT.github.io/practic_7/src/ "Верстка блока с отзывами") - Верстка блока с отзывами
