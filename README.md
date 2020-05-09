@@ -47,3 +47,5 @@
 [урок 20](https://dmitryvt.github.io/lesson_20/ "Видео-фон на сайте") - Видео-фон на сайте
 
 [Практика 8](https://DmitryVT.github.io/practic_8/src/ "Доверстал блок с отзывами") - Доверстал блок с отзывами
+
+[урок 21](https://dmitryvt.github.io/lesson_21/ "Parallax эффект для сайта") - Parallax эффект для сайта
