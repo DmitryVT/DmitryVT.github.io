@@ -383,7 +383,6 @@ section {
 }
 /* Все yg 100% включено */
 .all_inclusive {
-  padding: 0;
   background: #f5f5f5;
 }
 .all_inclusive .media {
