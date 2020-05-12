@@ -1,0 +1,36 @@
+.map {
+	padding: 0 1rem;	
+}
+.contact {
+	display: inline-block;
+	position: absolute;
+	margin-left: 20%;
+	height: 450px;
+}
+.logo {
+	display: inline-block;
+	padding: 1rem;
+}
+
+h5 {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 1rem;
+}
+
+.work p {
+	text-align: center;
+	vertical-align: middle;
+	color: #666666;
+	padding-top: 2rem;
+}
+
+.contact {
+	display: inline-block;
+	text-align: right;
+}
+
+.contact p {
+	font-weight: bold;
+}
