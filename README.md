@@ -51,3 +51,5 @@
 [урок 21](https://dmitryvt.github.io/lesson_21/ "Parallax эффект для сайта") - Parallax эффект для сайта
 
 [Практика 9](https://DmitryVT.github.io/practic_9/src/ "Верстка блоков схемы работы и все включено") - Верстка блоков схемы работы и все включено
+
+[урок 22](https://dmitryvt.github.io/lesson_22/ "Гео-карты для сайта.") - Гео-карты для сайта.
