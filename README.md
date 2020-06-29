@@ -56,7 +56,7 @@
 
 [Практика 10](https://dmitryvt.github.io/practic_10/src "Верстаю блок Развеиваем сомнения") - Верстаю блок "Развеиваем сомнения"
 
-[Интенсив HTML / CSS] (https://DmitryVT.github.io/Kinomonstr/ "Интенсив HTML / CSS") - HTML, CSS и адаптив
+[Интенсив HTML / CSS](https://DmitryVT.github.io/Kinomonstr/ "Интенсив HTML / CSS") - HTML, CSS и адаптив
 
 [Интенсив Охотники за привидениями](https://DmitryVT.github.io/ghostbusters/ "Интенсив Охотники за привидениями") - Flexbox, Jquery и адаптив
 
