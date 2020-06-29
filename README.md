@@ -1,5 +1,5 @@
 # Дмитрий Ташланов
-Мои домашние задания:
+Мои работы:
 
 [урок 4](https://DmitryVT.github.io/lesson_4/ "Первая HTML книга") - Первая HTML книга
 
@@ -55,3 +55,9 @@
 [урок 22](https://dmitryvt.github.io/lesson_22/src "Гео-карты для сайта.") - Гео-карты для сайта.
 
 [Практика 10](https://dmitryvt.github.io/practic_10/src "Верстаю блок Развеиваем сомнения") - Верстаю блок "Развеиваем сомнения"
+
+[Интенсив HTML / CSS] (https://DmitryVT.github.io/Kinomonstr/ "Интенсив HTML / CSS") - HTML, CSS и адаптив
+
+[Интенсив Охотники за привидениями](https://DmitryVT.github.io/ghostbusters/ "Интенсив Охотники за привидениями") - Flexbox, Jquery и адаптив
+
+
