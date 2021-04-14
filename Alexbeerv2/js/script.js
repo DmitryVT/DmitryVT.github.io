@@ -44,6 +44,7 @@ function draw() {
     bottle[i].y += 4;
 
     if (bottle[i].y == 600) {
+      score --;
       bottle.push({
         x: Math.floor(Math.random() * bg.width - 50),
         y: 0,
