@@ -7,8 +7,8 @@ function addKvadr() {
   div.id = "div";
   var div2 = document.createElement("div");
   div2.className = "elem2";
-  var addElem = cont.prepend(div);
-  var addElem = div.prepend(div2);
+  cont.prepend(div);
+  div.prepend(div2);
   var divWidth = div.offsetWidth;
   var divX = Math.floor(Math.random() * w - divWidth/2) + "px";
   div.style.left = divX;
@@ -27,7 +27,6 @@ function moveDown() {
   }
 }
 var timerId = setInterval(moveDown, 5);
-let heals = 10;
 
 function start() {
   addKvadr();
