@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Насколько ты геймер?</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Насколько ты геймер?</h1>
+    <p>Отметь в какую из этих серий видеоигр ты играл:</p>
+    <div class="game-options">
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="Mario Bros."></div>
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="Legend of Zelda"></div>
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="Pokémon"></div>
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="Final Fantasy"></div>
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="Pikmin"></div>
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="Tales of."></div>
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="Dragon Quest"></div>
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="Halo"></div>
+      <div class="game-option" style="background-image: url('https://via.placeholder.com/200x200');" data-game="GTA"></div>
+    </div>
+    <button class="btn-start">Начать</button>
+  </div>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <h2>Результаты</h2>
+      <p>Ты выбрал <span class="num-selected">0</span> серий игр.</p>
+      <p>Ты - <span class="result-text"></span></p>
+      <button class="btn-close">Закрыть</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
