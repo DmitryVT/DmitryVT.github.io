@@ -1,53 +1,64 @@
-// выбираем все элементы с классом game-option и добавляем обработчик события клика на каждый из них
-const gameOptions = document.querySelectorAll('.game-option');
-gameOptions.forEach(option => {
-  option.addEventListener('click', () => {
-    option.classList.toggle('selected');
-  });
+// Выбираем нужные элементы
+const introScreen = document.querySelector('.intro-screen');
+const startBtn = document.querySelector('#start-btn');
+const quizScreen = document.querySelector('.quiz-screen');
+const timer = document.querySelector('#timer');
+const gamesList = document.querySelectorAll('input[type="checkbox"]');
+const submitBtn = document.querySelector('#submit-btn');
+const resultScreen = document.querySelector('.result-screen');
+const scoreEl = document.querySelector('#score');
+const restartBtn = document.querySelector('#restart-btn');
+
+// Переменные для хранения времени и количества отмеченных игр
+let timeLeft = 3;
+let score = 0;
+
+// Функция для скрытия элемента
+function hideElement(element) {
+  element.classList.add('hidden');
+}
+
+// Функция для отображения элемента
+function showElement(element) {
+  element.classList.remove('hidden');
+}
+
+// Обработчик нажатия на кнопку начала теста
+startBtn.addEventListener('click', () => {
+  hideElement(introScreen); // Скрываем экран вступления
+  showElement(quizScreen); // Отображаем экран с тестом
+
+  // Запускаем таймер обратного отсчета перед началом теста
+  const countdown = setInterval(() => {
+    timeLeft--;
+    timer.textContent = timeLeft;
+    if (timeLeft === 0) {
+      clearInterval(countdown);
+      hideElement(timer); // Скрываем таймер
+    }
+  }, 1000);
 });
 
-// выбираем кнопку Начать и добавляем обработчик события клика на нее
-const btnStart = document.querySelector('.btn-start');
-btnStart.addEventListener('click', () => {
-  // создаем переменную selectedOptions и сохраняем в нее все выбранные опции
-  const selectedOptions = document.querySelectorAll('.selected');
-  // обновляем текст в модальном окне с количеством выбранных опций
-  const numSelected = document.querySelector('.num-selected');
-  numSelected.textContent = selectedOptions.length;
-  
-  // выбираем элемент с классом result-text и обновляем его текст в зависимости от количества выбранных опций
-  const resultText = document.querySelector('.result-text');
-  if (selectedOptions.length < 3) {
-    resultText.textContent = 'Ты - нуб';
-  } else if (selectedOptions.length >= 3 && selectedOptions.length <= 5) {
-    resultText.textContent = 'Ты - новичок';
-  } else if (selectedOptions.length >= 6 && selectedOptions.length <= 8) {
-    resultText.textContent = 'Ты - опытный геймер';
-  } else {
-    resultText.textContent = 'Ты - мастер игры';
-  }
-  
-  // показываем модальное окно
-  const modalOverlay = document.querySelector('.modal-overlay');
-  modalOverlay.classList.add('show');
+// Обработчик нажатия на кнопку узнать результат
+submitBtn.addEventListener('click', () => {
+  // Подсчитываем количество отмеченных игр
+  score = Array.from(gamesList).filter(game => game.checked).length;
+  scoreEl.textContent = score;
+  hideElement(quizScreen); // Скрываем экран с тестом
+  showElement(resultScreen); // Отображаем экран с результатом
 });
 
-// выбираем кнопку Закрыть в модальном окне и добавляем обработчик события клика на нее
-const btnClose = document.querySelector('.btn-close');
-btnClose.addEventListener('click', () => {
-  // скрываем модальное окно
-  const modalOverlay = document.querySelector('.modal-overlay');
-  modalOverlay.classList.remove('show');
-  
-  // сбрасываем выбранные опции
-  const selectedOptions = document.querySelectorAll('.selected');
-  selectedOptions.forEach(option => {
-    option.classList.remove('selected');
-  });
-  
-  // обновляем текст в модальном окне
-  const numSelected = document.querySelector('.num-selected');
-  numSelected.textContent = '0';
-  const resultText = document.querySelector('.result-text');
-  resultText.textContent = '';
+// Обработчик нажатия на кнопку еще раз
+restartBtn.addEventListener('click', () => {
+  // Сбрасываем значения переменных
+  timeLeft = 3;
+  score = 0;
+  timer.textContent = timeLeft;
+  scoreEl.textContent = score;
+
+  // Сбрасываем состояние чекбоксов
+  gamesList.forEach(game => game.checked = false);
+
+  hideElement(resultScreen); // Скрываем экран с результатом
+  showElement(introScreen); // Отображаем экран вступления
 });

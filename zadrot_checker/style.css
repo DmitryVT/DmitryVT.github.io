@@ -1,196 +1,44 @@
-html {
-  font-size: 16px;
-}
-
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #333;
-  background-color: #f8f8f8;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-button, input, select {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
   margin: 0;
+  padding: 0;
 }
 
-button:focus, input:focus, select:focus {
-  outline: none;
+.intro-screen,
+.quiz-screen,
+.result-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-button {
-  cursor: pointer;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.card {
-  padding: 1rem;
-  border-radius: 4px;
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  color: #fff;
-  background-color: #007bff;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn:hover {
-  color: #fff;
-  background-color: #0056b3;
-}
-
-.btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  border: 1px solid #ced4da;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: #80bdff;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
-}
-
-/* Стили для модального окна */
-
-.modal {
-  display: none; /* Скрываем модальное окно по умолчанию */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Затемнение фона */
-  z-index: 999; /* Делаем модальное окно поверх всех элементов */
-}
-
-.modal-content {
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 20px;
-  border: 1px solid #333;
-  width: 80%;
-  max-width: 500px;
+.quiz-screen {
   position: relative;
 }
 
-.close {
+#timer {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  color: #ff0000;
 }
 
-/* Стили для кнопки Начать */
-
-.start-btn {
-  display: block;
-  width: 200px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  background-color: #0056b3;
-  color: #fff;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 5px;
-  margin: 50px auto;
-}
-
-.start-btn:hover {
-  background-color: #0077d9;
-}
-
-.game-series {
-  margin: 20px 0;
-  padding: 0;
+#games-list {
   list-style: none;
+  padding: 0;
 }
 
-.game-series li {
-  display: block;
-  margin: 10px 0;
+#games-list li {
+  margin-bottom: 10px;
 }
 
-.game-series label {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #333;
+#submit-btn {
+  margin-top: 20px;
 }
 
-.game-series input[type="checkbox"] {
-  display: inline-block;
-  margin-right: 5px;
-  vertical-align: middle;
+.hidden {
+  display: none;
 }
