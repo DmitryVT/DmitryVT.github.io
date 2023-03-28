@@ -1,7 +1,9 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .intro-screen,
@@ -16,14 +18,25 @@ body {
 
 .quiz-screen {
   position: relative;
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
 }
 
-#timer {
+.game-list {
+  padding: 10px 20px;
+}
+
+.quiz_title {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 2em;
-  color: #ff0000;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn-result{
+  margin-bottom: 20px;
 }
 
 #games-list {
@@ -41,4 +54,34 @@ body {
 
 .hidden {
   display: none;
+}
+
+#games-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 колонки для широких экранов */
+  gap: 10px; /* расстояние между элементами списка */
+}
+
+#timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  /* для средних экранов */
+  #games-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+  }
+}
+
+@media (max-width: 480px) {
+  /* для маленьких экранов (мобильных) */
+  #games-list {
+    grid-template-columns: 1fr; /* 1 колонка */
+  }
 }

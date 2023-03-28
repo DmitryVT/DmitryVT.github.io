@@ -1,64 +1,49 @@
-// Выбираем нужные элементы
+const startBtn = document.getElementById('start-btn');
+const submitBtn = document.getElementById('submit-btn');
+const restartBtn = document.getElementById('restart-btn');
 const introScreen = document.querySelector('.intro-screen');
-const startBtn = document.querySelector('#start-btn');
 const quizScreen = document.querySelector('.quiz-screen');
-const timer = document.querySelector('#timer');
-const gamesList = document.querySelectorAll('input[type="checkbox"]');
-const submitBtn = document.querySelector('#submit-btn');
 const resultScreen = document.querySelector('.result-screen');
-const scoreEl = document.querySelector('#score');
-const restartBtn = document.querySelector('#restart-btn');
+const gamesList = document.getElementById('games-list');
+const scoreText = document.getElementById('score');
+const timerText = document.getElementById('timer');
+const gamesBox = document.getElementById('games-box');
+const timerScreen = document.getElementById('timer-screen');
 
-// Переменные для хранения времени и количества отмеченных игр
-let timeLeft = 3;
-let score = 0;
+startBtn.addEventListener('click', function () {
+  introScreen.classList.add('hidden');
+  quizScreen.classList.remove('hidden');
+  timerScreen.classList.remove('hidden');
+  startTimer();
+});
 
-// Функция для скрытия элемента
-function hideElement(element) {
-  element.classList.add('hidden');
-}
-
-// Функция для отображения элемента
-function showElement(element) {
-  element.classList.remove('hidden');
-}
-
-// Обработчик нажатия на кнопку начала теста
-startBtn.addEventListener('click', () => {
-  hideElement(introScreen); // Скрываем экран вступления
-  showElement(quizScreen); // Отображаем экран с тестом
-
-  // Запускаем таймер обратного отсчета перед началом теста
-  const countdown = setInterval(() => {
-    timeLeft--;
-    timer.textContent = timeLeft;
-    if (timeLeft === 0) {
-      clearInterval(countdown);
-      hideElement(timer); // Скрываем таймер
+submitBtn.addEventListener('click', function () {
+  let score = 0;
+  const checkboxes = gamesList.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach(function (checkbox) {
+    if (checkbox.checked) {
+      score++;
     }
-  }, 1000);
+  });
+  scoreText.innerText = score;
+  quizScreen.classList.add('hidden');
+  resultScreen.classList.remove('hidden');
 });
 
-// Обработчик нажатия на кнопку узнать результат
-submitBtn.addEventListener('click', () => {
-  // Подсчитываем количество отмеченных игр
-  score = Array.from(gamesList).filter(game => game.checked).length;
-  scoreEl.textContent = score;
-  hideElement(quizScreen); // Скрываем экран с тестом
-  showElement(resultScreen); // Отображаем экран с результатом
-});
 
-// Обработчик нажатия на кнопку еще раз
-restartBtn.addEventListener('click', () => {
-  // Сбрасываем значения переменных
-  timeLeft = 3;
-  score = 0;
-  timer.textContent = timeLeft;
-  scoreEl.textContent = score;
 
-  // Сбрасываем состояние чекбоксов
-  gamesList.forEach(game => game.checked = false);
-
-  hideElement(resultScreen); // Скрываем экран с результатом
-  showElement(introScreen); // Отображаем экран вступления
-});
+function startTimer() {
+  let timeLeft = 3;
+  const countdownInterval = setInterval(function () {
+    if (timeLeft <= 0) {
+      clearInterval(countdownInterval);
+      timerText.innerText = '';
+      gamesBox.classList.remove('hidden');
+      submitBtn.classList.remove('hidden');
+      timerScreen.classList.add('hidden');
+    } else {
+      timerText.innerText = timeLeft;
+      timeLeft--;
+    }
+  }, 1100);
+}

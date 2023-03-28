@@ -6,31 +6,120 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+
     <div class="intro-screen">
       <h1>Насколько ты геймер?</h1>
       <button id="start-btn">Пройти тест</button>
     </div>
 
+    <div id="timer-screen" class="hidden">
+    <h1 class="quiz_title">Отметь в какую из этих серий видеоигр ты играл</h1>
+    <div id="timer">3</div>
+    </div>
+
     <div class="quiz-screen hidden">
-      <h1>Отметь в какую из этих серий видеоигр ты играл</h1>
-      <div id="timer">3</div>
+    <div id="games-box" class="hidden">
       <ul id="games-list">
-        <li><label><input type="checkbox" name="game" value="mario-bros">Mario Bros.</label></li>
-        <li><label><input type="checkbox" name="game" value="legend-of-zelda">Legend of Zelda</label></li>
-        <li><label><input type="checkbox" name="game" value="pokemon">Pokémon</label></li>
-        <li><label><input type="checkbox" name="game" value="final-fantasy">Final Fantasy</label></li>
-        <li><label><input type="checkbox" name="game" value="pikmin">Pikmin</label></li>
-        <li><label><input type="checkbox" name="game" value="tales-of">Tales of.</label></li>
-        <li><label><input type="checkbox" name="game" value="dragon-quest">Dragon Quest</label></li>
-        <li><label><input type="checkbox" name="game" value="halo">Halo</label></li>
-        <li><label><input type="checkbox" name="game" value="gta">GTA</label></li>
+        <li><label><input type="checkbox" name="game" value="The Legend of Zelda">The Legend of Zelda</label></li>
+        <li><label><input type="checkbox" name="game" value="Super Mario Bros.">Super Mario Bros.</label></li>
+        <li><label><input type="checkbox" name="game" value="Final Fantasy">Final Fantasy</label></li>
+        <li><label><input type="checkbox" name="game" value="Minecraft">Minecraft</label></li>
+        <li><label><input type="checkbox" name="game" value="Grand Theft Auto">Grand Theft Auto</label></li>
+        <li><label><input type="checkbox" name="game" value="Call of Duty">Call of Duty</label></li>
+        <li><label><input type="checkbox" name="game" value="Halo">Halo</label></li>
+        <li><label><input type="checkbox" name="game" value="Assassin's Creed">Assassin's Creed</label></li>
+        <li><label><input type="checkbox" name="game" value="World of Warcraft">World of Warcraft</label></li>
+        <li><label><input type="checkbox" name="game" value="Overwatch">Overwatch</label></li>
+        <li><label><input type="checkbox" name="game" value="League of Legends">League of Legends</label></li>
+        <li><label><input type="checkbox" name="game" value="Counter-Strike">Counter-Strike</label></li>
+        <li><label><input type="checkbox" name="game" value="Fortnite">Fortnite</label></li>
+        <li><label><input type="checkbox" name="game" value="PlayerUnknown's Battlegrounds">PlayerUnknown's Battlegrounds</label></li>
+        <li><label><input type="checkbox" name="game" value="The Witcher">The Witcher</label></li>
+        <li><label><input type="checkbox" name="game" value="Red Dead Redemption">Red Dead Redemption</label></li>
+        <li><label><input type="checkbox" name="game" value="Fallout">Fallout</label></li>
+        <li><label><input type="checkbox" name="game" value="Metal Gear Solid">Metal Gear Solid</label></li>
+        <li><label><input type="checkbox" name="game" value="Dark Souls">Dark Souls</label></li>
+        <li><label><input type="checkbox" name="game" value="Resident Evil">Resident Evil</label></li>
+        <li><label><input type="checkbox" name="game" value="Half-Life">Half-Life</label></li>
+        <li><label><input type="checkbox" name="game" value="Portal">Portal</label></li>
+        <li><label><input type="checkbox" name="game" value="Team Fortress 2">Team Fortress 2</label></li>
+        <li><label><input type="checkbox" name="game" value="Doom">Doom</label></li>
+        <li><label><input type="checkbox" name="game" value="Quake">Quake</label></li>
+        <li><label><input type="checkbox" name="game" value="StarCraft">StarCraft</label></li>
+        <li><label><input type="checkbox" name="game" value="Diablo">Diablo</label></li>
+        <li><label><input type="checkbox" name="game" value="World of Tanks">World of Tanks</label></li>
+        <li><label><input type="checkbox" name="game" value="Civilization">Civilization</label></li>
+        <li><label><input type="checkbox" name="game" value="SimCity">SimCity</label></li>
+        <li><label><input type="checkbox" name="game" value="Mass Effect">Mass Effect</label></li>
+        <li><label><input type="checkbox" name="game" value="Dragon Age">Dragon Age</label></li>
+        <li><label><input type="checkbox" name="game" value="The Elder Scrolls">The Elder Scrolls</label></li>
+        <li><label><input type="checkbox" name="game" value="Bioshock">Bioshock</label></li>
+        <li><label><input type="checkbox" name="game" value="Max Payne">Max Payne</label></li>
+        <li><label><input type="checkbox" name="game" value="Deus Ex">Deus Ex</label></li>
+        <li><label><input type="checkbox" name="game" value="Hitman">Hitman</label></li>
+        <li><label><input type="checkbox" name="game" value="Tetris">Tetris</label></li>
+        <li><label><input type="checkbox" name="game" value="Pac-Man">Pac-Man</label></li>
+        <li><label><input type="checkbox" name="game" value="Donkey Kong">Donkey Kong</label></li>
+        <li><label><input type="checkbox" name="game" value="Sonic the Hedgehog">Sonic the Hedgehog</label></li>
+        <li><label><input type="checkbox" name="game" value="Crash Bandicoot">Crash Bandicoot</label></li>
+        <li><label><input type="checkbox" name="game" value="Spyro the Dragon">Spyro the Dragon</label></li>
+        <li><label><input type="checkbox" name="game" value="God of War">God of War</label></li>
+        <li><label><input type="checkbox" name="game" value="Uncharted">Uncharted</label></li>
+        <li><label><input type="checkbox" name="game" value="The Last of Us">The Last of Us</label></li>
+        <li><label><input type="checkbox" name="game" value="Horizon Zero Dawn">Horizon Zero Dawn</label></li>
+        <li><label><input type="checkbox" name="game" value="Death Stranding">Death Stranding</label></li>
+        <li><label><input type="checkbox" name="game" value="Bloodborne">Bloodborne</label></li>
+        <li><label><input type="checkbox" name="game" value="Persona">Persona</label></li>
+        <li><label><input type="checkbox" name="game" value="Kingdom Hearts">Kingdom Hearts</label></li>
+        <li><label><input type="checkbox" name="game" value="Silent Hill">Silent Hill</label></li>
+        <li><label><input type="checkbox" name="game" value="Far Cry">Far Cry</label></li>
+        <li><label><input type="checkbox" name="game" value="Gothic">Gothic</label></li>
+        <li><label><input type="checkbox" name="game" value="Risen">Risen</label></li>
+        <li><label><input type="checkbox" name="game" value="Elder Scrolls Online">Elder Scrolls Online</label></li>
+        <li><label><input type="checkbox" name="game" value="Dota 2">Dota 2</label></li>
+        <li><label><input type="checkbox" name="game" value="Battlefield">Battlefield</label></li>
+        <li><label><input type="checkbox" name="game" value="Pokemon">Pokemon</label></li>
+        <li><label><input type="checkbox" name="game" value="Mega Man">Mega Man</label></li>
+        <li><label><input type="checkbox" name="game" value="Street Fighter">Street Fighter</label></li>
+        <li><label><input type="checkbox" name="game" value="Mortal Kombat">Mortal Kombat</label></li>
+        <li><label><input type="checkbox" name="game" value="Tekken">Tekken</label></li>
+        <li><label><input type="checkbox" name="game" value="Gran Turismo">Gran Turismo</label></li>
+        <li><label><input type="checkbox" name="game" value="Need for Speed">Need for Speed</label></li>
+        <li><label><input type="checkbox" name="game" value="FIFA">FIFA</label></li>
+        <li><label><input type="checkbox" name="game" value="NBA 2K">NBA 2K</label></li>
+        <li><label><input type="checkbox" name="game" value="Tony Hawk's Pro Skater">Tony Hawk's Pro Skater</label></li>
+        <li><label><input type="checkbox" name="game" value="The Sims">The Sims</label></li>
+        <li><label><input type="checkbox" name="game" value="Undertale">Undertale</label></li>
+        <li><label><input type="checkbox" name="game" value="Hollow Knight">Hollow Knight</label></li>
+        <li><label><input type="checkbox" name="game" value="Stardew Valley">Stardew Valley</label></li>
+        <li><label><input type="checkbox" name="game" value="Bastion">Bastion</label></li>
+        <li><label><input type="checkbox" name="game" value="Transistor">Transistor</label></li>
+        <li><label><input type="checkbox" name="game" value="Oxenfree">Oxenfree</label></li>
+        <li><label><input type="checkbox" name="game" value="Firewatch">Firewatch</label></li>
+        <li><label><input type="checkbox" name="game" value="The Witness">The Witness</label></li>
+        <li><label><input type="checkbox" name="game" value="Little Nightmares">Little Nightmares</label></li>
+        <li><label><input type="checkbox" name="game" value="Inside">Inside</label></li>
+        <li><label><input type="checkbox" name="game" value="Limbo">Limbo</label></li>
+        <li><label><input type="checkbox" name="game" value="Ori and the Blind Forest">Ori and the Blind Forest</label></li>
+        <li><label><input type="checkbox" name="game" value="Journey">Journey</label></li>
+        <li><label><input type="checkbox" name="game" value="Papers, Please">Papers, Please</label></li>
+        <li><label><input type="checkbox" name="game" value="Terraria">Terraria</label></li>
+        <li><label><input type="checkbox" name="game" value="Celeste">Celeste</label></li>
+        <li><label><input type="checkbox" name="game" value="Cuphead">Cuphead</label></li>
+        <li><label><input type="checkbox" name="game" value="Fez">Fez</label></li>
+        <li><label><input type="checkbox" name="game" value="Katana Zero">Katana Zero</label></li>
+        <li><label><input type="checkbox" name="game" value="Darkest Dungeon">Darkest Dungeon</label></li>
+        <li><label><input type="checkbox" name="game" value="The Banner Saga">The Banner Saga</label></li>
+        <li><label><input type="checkbox" name="game" value="Brothers: A Tale of Two Sons">Brothers: A Tale of Two Sons</label></li>
+        <li><label><input type="checkbox" name="game" value="Mark of the Ninja">Mark of the Ninja</label></
       </ul>
-      <button id="submit-btn">Узнать результат</button>
+    </div>
+      <button id="submit-btn" class="btn-result hidden">Узнать результат</button>
     </div>
 
     <div class="result-screen hidden">
       <h1>Ты отметил <span id="score">0</span> игр</h1>
-      <button id="restart-btn">Еще раз</button>
+      <button id="restart-btn" onclick="location.reload()">Еще раз</button>
     </div>
 
     <script src="script.js"></script>
