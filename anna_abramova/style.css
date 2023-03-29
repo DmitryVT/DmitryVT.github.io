@@ -215,10 +215,7 @@ header {
 .circle {
   width: 27px;
   height: 27px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .circle::before,
@@ -232,7 +229,7 @@ header {
   position: absolute;
   z-index: -1;
   left: -2px;
-  top: -4px;
+  top: -2px;
 }
 
 .circle::before {
@@ -254,6 +251,9 @@ header {
   height: 27px;
   position: relative;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .workflow-titles {
@@ -265,8 +265,6 @@ header {
 }
 
 .workflow-numbers {
-  display: flex;
-  justify-content: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 143%;
