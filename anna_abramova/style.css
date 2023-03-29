@@ -67,6 +67,7 @@ header {
 .title-img {
   width: 45%;
   max-width: 380px;
+  height: auto;
 }
 
 .title_pin {
