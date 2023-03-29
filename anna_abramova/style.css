@@ -64,10 +64,14 @@ header {
   justify-content: space-around;
 }
 
+.title_img img {
+  max-width: 100%;
+  height: auto;
+}
+
 .title-img {
   width: 45%;
   max-width: 380px;
-  height: auto;
 }
 
 .title_pin {
