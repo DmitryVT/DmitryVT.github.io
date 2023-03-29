@@ -56,12 +56,6 @@ body {
   display: none;
 }
 
-#games-list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 колонки для широких экранов */
-  gap: 10px; /* расстояние между элементами списка */
-}
-
 #timer {
   position: absolute;
   top: 50%;
@@ -72,16 +66,29 @@ body {
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  /* для средних экранов */
+#games-list {
+  display: grid;
+  grid-template-columns: 1fr; /* 1 колонка по умолчанию */
+  gap: 10px; /* расстояние между элементами списка */
+}
+
+@media (min-width: 480px) {
+  /* для маленьких экранов (мобильных) */
+  #games-list {
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
+  }
+}
+
+@media (min-width: 768px) {
+  /* для планшетов */
   #games-list {
     grid-template-columns: repeat(2, 1fr); /* 2 колонки */
   }
 }
 
-@media (max-width: 480px) {
-  /* для маленьких экранов (мобильных) */
+@media (min-width: 1024px) {
+  /* для десктопов */
   #games-list {
-    grid-template-columns: 1fr; /* 1 колонка */
+    grid-template-columns: repeat(4, 1fr); /* 4 колонки для широких экранов */
   }
 }
