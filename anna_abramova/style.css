@@ -121,6 +121,7 @@ header {
 
 .menu-popup {
   display: none;
+  height: 90px;
   background: #2c2e3e;
   position: fixed;
   left: 0;
