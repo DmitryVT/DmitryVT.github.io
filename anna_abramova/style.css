@@ -35,6 +35,7 @@ header {
 }
 
 .main_title-btn {
+  cursor: pointer;
   margin-top: 20px;
   padding: 0;
   border: 3px solid #000000;
@@ -169,8 +170,7 @@ header {
   line-height: 128%;
   margin-bottom: 21px;
 }
-
-.content-btn {
+.content_btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,6 +178,9 @@ header {
   font-weight: 500;
   font-size: 18px;
   line-height: 143%;
+}
+
+.content-btn {
   cursor: pointer;
   min-height: 73px;
   border: none;
